@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameEnding : MonoBehaviour
 {
@@ -11,10 +12,25 @@ public class GameEnding : MonoBehaviour
     public CanvasGroup caughtBackgroundImageCanvasGroup;
     public AudioSource caughtAudio;
 
+    public float maxDetection = 100.0f;
+    public float detectionStep = 1.0f;
+    public Slider slider;
+    private float minDetection = 0.0f;
+    private float currentDetection = 100.0f;
+    private bool playerInVisionCone = false;
+    private float detectionMultiplier = 1.0f;
+
     bool m_IsPlayerAtExit;
     bool m_IsPlayerCaught;
     float m_Timer;
     bool m_HasAudioPlayed;
+
+    void Start () 
+    {
+        currentDetection = minDetection;
+        slider.maxValue = maxDetection;
+        slider.value = minDetection;
+    }
     
     void OnTriggerEnter (Collider other)
     {
@@ -27,6 +43,42 @@ public class GameEnding : MonoBehaviour
     public void CaughtPlayer ()
     {
         m_IsPlayerCaught = true;
+    }
+
+    public void DetectingPlayer (float multiplier)
+    {
+        playerInVisionCone = true;
+        detectionMultiplier = multiplier;
+    }
+
+    void FixedUpdate ()
+    {
+        if (playerInVisionCone)
+        {
+            // increase detection value at multiplier rate
+            currentDetection += (detectionMultiplier * detectionStep);
+            slider.value = currentDetection;
+            // check for end state
+            if (currentDetection >= maxDetection)
+            {
+                // player is caught since they are now fully detected
+                m_IsPlayerCaught = true;
+            }
+            // reset for next pass
+            playerInVisionCone = false;
+            detectionMultiplier = 1.0f;
+        }
+        else if (!playerInVisionCone && currentDetection < maxDetection)
+        {
+            // drain detection bar at base rate
+            currentDetection -= detectionStep;
+            slider.value = currentDetection;
+            // reset to min if exceeded
+            if (currentDetection < minDetection)
+            {
+                currentDetection = minDetection;
+            }
+        }
     }
 
     void Update ()

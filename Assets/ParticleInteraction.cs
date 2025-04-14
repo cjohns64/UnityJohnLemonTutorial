@@ -7,6 +7,7 @@ public class ParticleInteraction : MonoBehaviour
     public GameEnding gameEnding;
     // partical system colliders
     public ParticleSystem ps;
+    public AudioSource particle_sfx;
     private static float hit_scale = 25.0f;
     // these lists are used to contain the particles which match
     // the trigger conditions each frame.
@@ -21,6 +22,8 @@ public class ParticleInteraction : MonoBehaviour
     {
         // get the particles which matched the trigger conditions this frame
         int numEnter = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Enter, enter);
+        // play sound effect
+        particle_sfx.Play();
 
         // each partical hit adds to the detection bar
         gameEnding.DetectingPlayer((float) numEnter * hit_scale);

@@ -190,7 +190,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2008973354732098957}
+      objectReference: {fileID: 1171684542}
     - target: {fileID: 3779070228117011245, guid: 39d0626ce76d1884da050e0e509a5540,
         type: 3}
       propertyPath: gameEnding
@@ -1276,6 +1276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230675352881160241, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 5642716984738007026}
     - target: {fileID: 6925745739663848697, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}
       propertyPath: m_RootOrder
@@ -1341,6 +1346,16 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 5642716984738007026}
+    - target: {fileID: 8176387096845249885, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: eyesight_power
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: 'TriggerModule.primitives.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2008973354732098957}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1950,6 +1965,12 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!4 &1171684542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 310933272658838984, guid: e58a8494f35e17f45ba5bbffdfb92517,
+    type: 3}
+  m_PrefabInstance: {fileID: 4012380625681614536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1277040776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 186551185459921408, guid: 549c69af39b84624b8a053537c407def,
@@ -2274,6 +2295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230675352881160241, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 5642716984738007026}
     - target: {fileID: 6925745739663848697, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}
       propertyPath: m_RootOrder
@@ -2339,6 +2365,16 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 5642716984738007026}
+    - target: {fileID: 8176387096845249885, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: eyesight_power
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: 'TriggerModule.primitives.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2008973354732098957}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2798,6 +2834,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230675352881160241, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 5642716984738007026}
     - target: {fileID: 6925745739663848697, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}
       propertyPath: m_RootOrder
@@ -2863,6 +2904,16 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 5642716984738007026}
+    - target: {fileID: 8176387096845249885, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: eyesight_power
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: 'TriggerModule.primitives.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2008973354732098957}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4117,6 +4168,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 6230675352881160241, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 5642716984738007026}
     - target: {fileID: 6925745739663848697, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}
       propertyPath: m_RootOrder
@@ -4172,6 +4228,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7793919046215920111, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.549
+      objectReference: {fileID: 0}
     - target: {fileID: 8176387096845249885, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}
       propertyPath: player
@@ -4182,6 +4243,61 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 5642716984738007026}
+    - target: {fileID: 8176387096845249885, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: eyesight_power
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: ShapeModule.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: TriggerModule.radiusScale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: 'TriggerModule.primitives.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2008973354732098957}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.minScalar
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115905671524267664, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

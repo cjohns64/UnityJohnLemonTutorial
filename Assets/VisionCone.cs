@@ -10,8 +10,9 @@ public class VisionCone : MonoBehaviour
     private const float SQR_VISION_RANGE = VISION_RANGE * VISION_RANGE;
     private const float INV_SQR_VISION_RANGE = 1.0f / SQR_VISION_RANGE;
     private const float VISION_ANGLE = 0.1f;
-    private const float MAX_MULT = 50.0f;
+    private const float MAX_MULT = 10.0f;
     private const float MIN_MULT = 0.0f;
+    public float eyesight_power = 1.0f;
 
     /*
      * check if player is within targeting range
@@ -43,7 +44,7 @@ public class VisionCone : MonoBehaviour
                         // y = (MIN_MULT * (x - 0.0f) - MAX_MULT * (x - SQR_VISION_RANGE)) * 1/(SQR_VISION_RANGE)
                         // with MIN_MULT = 0.0f
                         // y = -1 * MAX_MULT * (player_relative_position.sqrMagnitude - SQR_VISION_RANGE) * INV_SQR_VISION_RANGE
-                        float multiplier = INV_SQR_VISION_RANGE * MAX_MULT * (SQR_VISION_RANGE - player_relative_position.sqrMagnitude);
+                        float multiplier = eyesight_power * INV_SQR_VISION_RANGE * MAX_MULT * (SQR_VISION_RANGE - player_relative_position.sqrMagnitude);
                         gameEnding.DetectingPlayer (multiplier);
                     }
                 }

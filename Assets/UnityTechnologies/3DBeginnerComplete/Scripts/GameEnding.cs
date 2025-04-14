@@ -12,6 +12,7 @@ public class GameEnding : MonoBehaviour
     public CanvasGroup caughtBackgroundImageCanvasGroup;
     public AudioSource caughtAudio;
 
+    // detection bar
     public float maxDetection = 100.0f;
     public float detectionStep = 1.0f;
     public Slider slider;
@@ -31,7 +32,7 @@ public class GameEnding : MonoBehaviour
         slider.maxValue = maxDetection;
         slider.value = minDetection;
     }
-    
+
     void OnTriggerEnter (Collider other)
     {
         if (other.gameObject == player)

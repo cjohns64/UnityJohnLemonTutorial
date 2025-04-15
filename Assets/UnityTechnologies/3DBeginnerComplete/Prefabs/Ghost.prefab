@@ -31,6 +31,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7718751292918344044}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &946727720263349647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450889333202713677}
+  - component: {fileID: 1549198305326422604}
+  m_Layer: 0
+  m_Name: visionSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1450889333202713677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946727720263349647}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.662, z: 0.429}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6925745739663848697}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1549198305326422604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946727720263349647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126c0349b1580f562bf60b03de77ca68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyesight_power: 1
 --- !u!1 &1372249969442089300
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +516,6 @@ GameObject:
   - component: {fileID: 3540391287371809819}
   - component: {fileID: 1176990128951978394}
   - component: {fileID: 6986812540457888193}
-  - component: {fileID: 8176387096845249885}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -495,6 +539,7 @@ Transform:
   - {fileID: 5024542207124068256}
   - {fileID: 4358288104198974899}
   - {fileID: 7793919046215920111}
+  - {fileID: 1450889333202713677}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6979926626815036113
@@ -702,21 +747,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8176387096845249885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5075534488604402034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126c0349b1580f562bf60b03de77ca68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gameEnding: {fileID: 0}
-  eyesight_power: 1
 --- !u!1 &5863192054190611860
 GameObject:
   m_ObjectHideFlags: 0
@@ -5660,6 +5690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameEnding: {fileID: 0}
   ps: {fileID: 9115905671524267664}
+  particle_sfx: {fileID: 0}
 --- !u!1 &6520381193484044088
 GameObject:
   m_ObjectHideFlags: 0

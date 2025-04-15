@@ -4,22 +4,28 @@ using UnityEngine;
 
 public class VisionCone : MonoBehaviour
 {
-    public Transform player;
-    public GameEnding gameEnding;
+    private Transform player;
+    private GameEnding gameEnding;
     private const float VISION_RANGE = 4.5f;
     private const float SQR_VISION_RANGE = VISION_RANGE * VISION_RANGE;
     private const float INV_SQR_VISION_RANGE = 1.0f / SQR_VISION_RANGE;
-    private const float VISION_ANGLE = 0.1f;
+    private const float VISION_ANGLE = 1.0f;
     private const float MAX_MULT = 10.0f;
     private const float MIN_MULT = 0.0f;
     public float eyesight_power = 1.0f;
+
+    void Start ()
+    {
+        // lookup the player and the game Ending script
+        player = GameObject.FindWithTag("Player").transform;
+        gameEnding = Object.FindFirstObjectByType<GameEnding>();
+    }
 
     /*
      * check if player is within targeting range
      * check if player is within targeting angle
      * check if player is visible (raycast)
      */
-
     void Update ()
     {
         // check if player is within vision range

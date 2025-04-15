@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ParticleInteraction : MonoBehaviour
 {
-    public GameEnding gameEnding;
+    private GameEnding gameEnding;
     // partical system colliders
-    public ParticleSystem ps;
-    public AudioSource particle_sfx;
+    private ParticleSystem ps;
+    private AudioSource particle_sfx;
     private static float hit_scale = 25.0f;
     // these lists are used to contain the particles which match
     // the trigger conditions each frame.
@@ -16,6 +16,8 @@ public class ParticleInteraction : MonoBehaviour
     void OnEnable()
     {
         ps = GetComponent<ParticleSystem>();
+        gameEnding = Object.FindFirstObjectByType<GameEnding>();
+        particle_sfx = GameObject.Find("Ectoplasm_SFX").GetComponent<AudioSource>();
     }
     
     void OnParticleTrigger()
